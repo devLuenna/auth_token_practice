@@ -1,3 +1,6 @@
+//해당 파일은 sequelize model generate 명령어 실행하면 자동으로 생성됨.
+//config.js 파일로 require 부분 수정해줌.
+
 'use strict';
 
 const fs = require('fs');
@@ -5,7 +8,7 @@ const path = require('path');
 const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
-const config = require(__dirname + '/../config/config.json')[env];
+const config = require(__dirname + '/../config/config.js')[env];
 const db = {};
 
 let sequelize;
