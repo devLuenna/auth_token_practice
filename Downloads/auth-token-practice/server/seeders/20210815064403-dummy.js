@@ -1,6 +1,4 @@
 'use strict';
-//데이터베이스에 미리 저장되어 있을 user 레코드
-//수기 작성함!
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
